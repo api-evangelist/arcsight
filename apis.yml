@@ -1,8 +1,25 @@
 aid: arcsight
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/arcsight.png
 name: ArcSight
-description: 'ArcSight is a company surfaced as a portfolio company of kleiner-perkins and added to the
-  API Evangelist network as a stub for enrichment. Sector: security. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'ArcSight is an enterprise security information and event management (SIEM) platform,
+  now part of OpenText Cybersecurity (formerly Micro Focus, and HP before that). The ArcSight family
+  centers on Enterprise Security Manager (ESM) for real-time correlation and threat detection, alongside
+  Logger for log management and compliance, SmartConnectors for data collection and normalization,
+  Intelligence for behavioral analytics, and Recon for search and investigation. ArcSight was an early
+  Kleiner Perkins portfolio company. It exposes REST and web-services APIs (ESM client services, Logger
+  Web Services, and SCIM user provisioning) primarily to on-premises and SaaS customer deployments rather
+  than as a public developer platform.'
 url: https://raw.githubusercontent.com/api-evangelist/arcsight/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +29,33 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
 - Security
+- SIEM
+- Cybersecurity
+- Threat Detection
+- Log Management
+- Compliance
+- Enterprise Security
 apis: []
+common:
+- type: DomainSecurity
+  url: security/arcsight-domain-security.yml
+- type: Website
+  url: https://www.opentext.com/products/arcsight-enterprise-security-manager
+- type: Documentation
+  url: https://www.microfocus.com/documentation/arcsight/
+- type: Support
+  url: https://community.opentext.com/cyberres/arcsight/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
